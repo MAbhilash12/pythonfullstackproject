@@ -1,0 +1,6 @@
+streamlit>=1.29 #front frame work for web pages
+supabase>=2.0.2 #supabase client for database description
+fastapi>=0.104.1 #backend api framework
+uvicorn>=0.24.0 #ASGI Server for FastApi
+python-dotenv>=1.0.0 #Environment Variable Management
+

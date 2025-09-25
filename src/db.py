@@ -75,5 +75,5 @@ def get_reservation_by_user(user_id):
     return SUPABASE.table("reservations").select("*").eq("user id",user_id).execute()
 
 #=============cancel reservations===============#
-def cancel_reservations(reservation_id):
-    return SUPABASE.table("reservations").select("*").eq("reservation_id",reservation_id).execute()
+def cancel_reservation(reservation_id: int):
+    return SUPABASE.table("reservations").update({"status": "Cancelled"}).eq("reservation_id", reservation_id).execute()
